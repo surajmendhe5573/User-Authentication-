@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'auth.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        "NAME": "dj auth",
+        "USER": "postgres",
+        "PASSWORD": "suraj",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
